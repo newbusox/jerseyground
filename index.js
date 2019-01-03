@@ -84,4 +84,21 @@ document.addEventListener('DOMContentLoaded', function(e) {
     function enterAbout() {
         TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
     }
+
+    function writeUserData(address) {
+        firebase.database().ref('addresses-list/').push({
+            address
+        });
+    }
+
+
+    document.addEventListener('click', function (e) {
+        e.preventDefault()
+        if (event.target.id === "submit") {
+            let text = event.target.parentElement.children[0]
+            writeUserData(text.value)
+            text.value = ""
+            window.open("https://benjaminshelley.typeform.com/to/AmrxvK", "_blank")
+        }
+    })
 })

@@ -11,6 +11,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./lib/index.css">
+
+        <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+        <!-- <script src="bundle.js"></script> -->
+
+        <script>
+            // Initialize Firebase
+            // require('dotenv').config()
+            // console.log(process.env)
+            var config = {
+                apiKey: "AIzaSyAj0kG0p8gEMTipuV8hRrJkd_-Na1znBjQ",
+                authDomain: "jerseyground-800b7.firebaseapp.com",
+                databaseURL: "https://jerseyground-800b7.firebaseio.com",
+                projectId: "jerseyground-800b7",
+                storageBucket: "jerseyground-800b7.appspot.com",
+                messagingSenderId: "197557832076"
+            };
+            firebase.initializeApp(config);
+        </script>
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -45,7 +64,7 @@
             <div class="middle">
                 <div class="nav-form flex items-center justify-between">
                     <input class="address-input grey" type="" name="" placeholder="Enter your home address">
-                    <a class="button send white text-decoration-none" target="_blank" href="https://benjaminshelley.typeform.com/to/AmrxvK">Get Your Free Offer</a>
+                    <a class="button send white text-decoration-none" id="submit" target="_blank" href="https://benjaminshelley.typeform.com/to/AmrxvK">Get Your Free Offer</a>
                 </div>
             </div>
             <div class="right">
@@ -62,7 +81,7 @@
 
                 <div class="form flex items-center justify-between" id="form">
                     <input class="address-input grey" type="" name="" placeholder="Enter your home address">
-                    <a class="button send white text-decoration-none" target="_blank" href="https://benjaminshelley.typeform.com/to/AmrxvK">Get Your Free Offer</a>
+                    <a class="button send white text-decoration-none" id="submit" target="_blank" href="https://benjaminshelley.typeform.com/to/AmrxvK">Get Your Free Offer</a>
                 </div>
                     
                 <p class="half-width body-light white" style="width: 55%">Sell your home to JerseyGround to avoid the unnecessary hassle of listing with a broker, months of showings, and unnecessary fees</p>
@@ -158,7 +177,7 @@
         </section>
         
         
-
+       
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
