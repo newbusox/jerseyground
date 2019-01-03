@@ -41,17 +41,16 @@
 }
 
 .process {
-    padding-top: 5%;
+    padding: 5% 0%;
 }
 
 .process-inner {
-    padding-left: 8%;
-    padding-right: 8%;
-
+    padding: 0% 8%;
 }
 
 #four {
-    background-color: var(--white)
+    background-color: var(--white); 
+    height: unset;
 }
 
 .number {

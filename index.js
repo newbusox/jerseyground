@@ -14,30 +14,25 @@ document.addEventListener('DOMContentLoaded', function(e) {
         }
     });
 
-    // sticky Form
-    // var pin = new ScrollMagic.Scene({
-    //     triggerElement: '#form',
-    //     offset: -10
-    // }).setPin('#form')
-    // pin.setClassToggle('#form', 'nav-class')
-    // pin.addIndicators()
-    // pin.addTo(exitController)
-
     // add nav Scene to exit Controller 
     var navScene = new ScrollMagic.Scene({
         triggerElement: '#form',
-        // offset: 50
     })
-    navScene.on("progress", () => addNavForm())
-    // navScene.addIndicators()
+    navScene.on("enter", () => addNavForm())
     navScene.addTo(exitController)
+
+    // reverse nav Scene 
+    var reverseNavScene = new ScrollMagic.Scene({
+        triggerElement: '#form',
+    })
+    reverseNavScene.on("leave", () => removeNavForm())
+    reverseNavScene.addTo(exitController)
 
     // add Scenes to Controller
     var sceneTwo = new ScrollMagic.Scene({
         triggerElement: '#two',
     })
     sceneTwo.on("enter", () => enterMaxims())
-    // sceneTwo.addIndicators()
     sceneTwo.addTo(enterController)
 
 
@@ -45,27 +40,28 @@ document.addEventListener('DOMContentLoaded', function(e) {
         triggerElement: '#three',
     })
     sceneThree.on("progress", () => enterPlayer())
-    // sceneThree.addIndicators()
     sceneThree.addTo(enterController)
 
     var sceneFour = new ScrollMagic.Scene({
         triggerElement: '#four',
     })
     sceneFour.on("enter", () => enterProcess())
-    // sceneFour.addIndicators()
     sceneFour.addTo(enterController)
 
     var sceneFive = new ScrollMagic.Scene({
         triggerElement: '#five',
         offset: 50,
     })
-    sceneFive.on("progress", () => enterAbout())
-    // sceneFive.addIndicators()    
+    sceneFive.on("progress", () => enterAbout())  
     sceneFive.addTo(enterController)
 
     // functions
     function addNavForm() {
         TweenMax.fromTo(".middle", 1, { opacity: 0 }, { opacity: 1 })
+    }
+
+    function removeNavForm() {
+        TweenMax.fromTo(".middle", 1, { opacity: 1 }, { opacity: 0, color: "red" })
     }
 
     function enterMaxims() {

@@ -27,8 +27,12 @@
     width: 90% !important;
 }
 
-.nav-form > .button.send{ 
+.nav-form > .button.send { 
     padding: 10px;
+}
+
+input:focus {
+    outline: none;
 }
 /* .nav-class {
     transform: translateX(200px);
