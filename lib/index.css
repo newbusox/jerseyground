@@ -1,0 +1,100 @@
+@import './fonts.css';
+@import './colors.css';
+@import './nav.css';
+@import './form.css';
+
+* {
+    font-family: 'Avenir Next Medium';
+}
+
+
+.nav {
+    background-color: white;
+    margin: 0;
+    font-family: 'Avenir Next Demi Bold';
+    font-size: 18px;
+    color: var(--main-blue);
+    z-index: 100;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+#one {
+    background-image: url('../assets/images/background-img-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-content {
+    padding-top: 10%;
+    padding-left: 8%;
+}
+
+#two {
+    height: unset;
+    background-color: white;
+}
+
+.maxim-section {
+    width: 25%;
+    padding: 10% 0%;
+}
+
+
+#three {
+    background-image: url('../assets/images/section-three-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie-background {
+    width: 80%; 
+    height: 80%;
+    /* opacity: 0; */
+}
+
+.process {
+    padding-top: 5%;
+}
+
+.process-inner {
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+#four {
+    background-color: var(--white)
+}
+
+.number {
+    border: 1px solid var(--grey);
+    border-radius: 200px;
+    padding: 4px 12px;
+    font-size: 22px;
+}
+
+#five {
+    height: unset;
+    background-image: url('../assets/images/section-three-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-shade {
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    padding: 5% 8%;
+}
+
+#six {
+    height: unset;
+}

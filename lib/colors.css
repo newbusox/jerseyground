@@ -1,0 +1,22 @@
+:root {
+    --main-blue: #5FAACF; 
+    --white: white;
+    --grey: #4A4A4A;
+}
+
+.main-blue {
+    color: var(--main-blue)
+}
+
+.main-blue-transparent {
+    background-color: rgba(95, 170, 207, .9);
+   
+}
+
+.white {
+    color: var(--white)
+}
+
+.grey {
+    color: var(--grey)
+}
