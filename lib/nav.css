@@ -1,34 +1,42 @@
 .nav {
-  display: flex;
-  height: 60px;
-  align-items: center;
-  background-color: white;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: white;
+    font-family: 'Avenir Next Demi Bold';
+    z-index: 100;
+    color: var(--main-blue);
+    margin: 0;
+    font-size: 18px;
 }
 
+
 .left, .middle, .right {
-  flex: 1;
+    flex: 1;
 }
 
 
 .middle {
-  text-align: center;
-  opacity: 0;
+    text-align: center;
+    opacity: 0;
 }
 
 .right {
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .logo {
-  /* width: 60px; */
-  /* height: 60px; */
-  margin-left: 20px !important;
+    margin-left: 20px !important;
 }
 
 .item {
-  font-size: 14px;
-  padding: 16px;
-  display: inline-block;
+    font-size: 14px;
+    padding: 16px;
+    display: inline-block;
+}
+
+a:visited {
+    color: var(--main-blue)
 }
