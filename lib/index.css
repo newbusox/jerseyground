@@ -3,6 +3,8 @@
 @import './nav.css';
 @import './form.css';
 @import './sections.css';
+@import './mobilemediaqueries.css';
+
 
 
 * {

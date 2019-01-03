@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/brookescarlett/jerseyground#readme",
   "dependencies": {
-    "browserify": "^16.2.3",
     "dotenv": "^6.2.0"
   }
 }

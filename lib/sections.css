@@ -17,9 +17,19 @@
     padding-left: 8%;
 }
 
+.width-set {
+    width: 55%
+}
+
 #two {
     height: unset;
     background-color: white;
+}
+
+.maxim-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .maxim-section {
