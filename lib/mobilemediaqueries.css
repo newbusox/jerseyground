@@ -1,13 +1,41 @@
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 641px) and (max-width: 953px) {
+    body {
+        background-color: red;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .nav-form {
+        justify-content: center;
+    }
+
+    #submit, .address-input {
+        font-size: 0.75rem;
+
+    }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 401px) {
 
     .main-content {
-        padding: 20% 2%;
+        padding: 15% 2%;
         text-align: center;
+    }
+
+     #submit, .address-input {
+        font-size: 0.75rem;
+
     }
 
     .width-set, .form {
         width: 100%;
         padding: 0px;
+    }
+
+    .nav-form {
+        margin-left: 15px;
     }
 
     .form {
@@ -62,8 +90,8 @@
     }
 
     .nav-form {
-        justify-content: center !important;
-        width: 72% !important;
+        justify-content: center;
+        width: 72%;
     }
 
     .address-input, .button.send {
@@ -75,7 +103,7 @@
     }
 
     .med-header-font {
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
     #second {
