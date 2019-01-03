@@ -24,6 +24,7 @@
 
 .nav-form {
     border-bottom: 1px solid var(--grey);
+    justify-content: space-between;
     width: 90% !important;
 }
 

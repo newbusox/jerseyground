@@ -61,6 +61,11 @@
         font-size: 28px;
     }
 
+    .nav-form {
+        justify-content: center !important;
+        width: 72% !important;
+    }
+
     .address-input, .button.send {
         font-size: 0.75rem;
     }

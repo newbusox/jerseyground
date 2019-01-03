@@ -58,10 +58,22 @@ document.addEventListener('DOMContentLoaded', function(e) {
     // functions
     function addNavForm() {
         TweenMax.fromTo(".middle", 1, { opacity: 0 }, { opacity: 1 })
+        if ( window.innerWidth < 400 ) {
+            TweenMax.fromTo(".logo", 0, { opacity: 1 }, { opacity: 0 })
+            TweenMax.fromTo(".left", 0, { display: "block" }, { display: "none" })
+            TweenMax.fromTo(".right", 0, { display: "block" }, { display: "none" })
+
+        } 
     }
 
     function removeNavForm() {
-        TweenMax.fromTo(".middle", 1, { opacity: 1 }, { opacity: 0, color: "red" })
+        TweenMax.fromTo(".middle", 1, { opacity: 1 }, { opacity: 0 })
+        if (window.innerWidth < 400) {
+            TweenMax.fromTo(".logo", 0, { opacity: 0 }, { opacity: 1})
+            TweenMax.fromTo(".left", 0, { display: "none" }, { display: "block" })
+            TweenMax.fromTo(".right", 0, { display: "none" }, { display: "block" })
+
+        } 
     }
 
     function enterMaxims() {
@@ -82,7 +94,11 @@ document.addEventListener('DOMContentLoaded', function(e) {
     }
 
     function enterAbout() {
-        TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+        if (window.innerWidth < 400) {
+            TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 4.5 })
+        } else {
+            TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+        }
     }
 
     function writeUserData(address) {
