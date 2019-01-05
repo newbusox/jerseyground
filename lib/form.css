@@ -10,26 +10,31 @@
     width: 300px;
     border: none;
     font-size: 1rem;
-
 }
 
 .button.send {
     background-color: var(--main-blue);
     width: 175px;
-    padding: 15px 20px 15px 17px;
+    padding: 15px 20px 15px 17px; 
     font-size: 1rem;
     text-align: center;
     color: white;
 }
 
 .nav-form {
-    border-bottom: 1px solid var(--grey);
+    border: 1px solid rgba(29, 29, 29, .2);
+    border-radius: 10px;
     justify-content: space-between;
     width: 90% !important;
 }
 
+.nav-form > .address-input {
+    padding-left: 4px;
+}
+
 .nav-form > .button.send { 
-    padding: 10px;
+    padding: 11px;
+    border-radius: 0px 9px 9px 0px;
 }
 
 input:focus {

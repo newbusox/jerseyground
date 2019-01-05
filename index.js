@@ -77,9 +77,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
     }
 
     function enterMaxims() {
-        TweenMax.fromTo("#sale", 1, { opacity: 0, y: 25 }, { opacity: 1, y:0, delay: 1 })
-        TweenMax.fromTo("#cash", 1, { opacity: 0, y: 25}, { opacity: 1, y: 0, delay: 2 })
-        TweenMax.fromTo("#cal", 1, { opacity: 0, y: 25 }, { opacity: 1, y:0, delay: 3})
+        TweenMax.fromTo("#sale", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y:0, delay: 0.5 })
+        TweenMax.fromTo("#cash", 0.5, { opacity: 0, y: 25}, { opacity: 1, y: 0, delay: 1 })
+        TweenMax.fromTo("#cal", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y:0, delay: 1.5})
     }
 
     function enterPlayer() {
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function(e) {
     }
 
     function enterProcess() {
-        TweenMax.fromTo("#head-text", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
-        TweenMax.fromTo("#first", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 2 })
-        TweenMax.fromTo("#second", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 3 })
-        TweenMax.fromTo("#third", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 4})
+        TweenMax.fromTo("#head-text", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+        TweenMax.fromTo("#first", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1.5 })
+        TweenMax.fromTo("#second", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 2 })
+        TweenMax.fromTo("#third", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 2.5})
     }
 
     function enterAbout() {

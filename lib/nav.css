@@ -37,6 +37,11 @@
     display: inline-block;
 }
 
+a { 
+    text-decoration: none;
+    color: var(--main-blue);
+}
+
 a:visited {
     color: var(--main-blue)
 }
