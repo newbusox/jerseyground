@@ -15,34 +15,34 @@
 
 .header-font {
     font-family: 'Avenir Next Medium';
-    font-size: 42px;
+    font-size: 2.25rem;
     margin-bottom: 24px; 
 }
 
 .med-header-font {
     font-family: 'Avenir Next Demi Bold';
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .body-medium {
     font-family: 'Avenir Next Medium';
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0.25rem;
 }
 
 .body-light {
     font-family: 'Avenir Next Light';
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0.25rem;
 }
 
 .body-heavy {
     font-family: 'Avenir Next Demi Bold';
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0.25rem;
 }
 
 .footer-light {
     font-family: 'Avenir Next Light';
-    font-size: 12px;
+    font-size: 0.75rem;
 }

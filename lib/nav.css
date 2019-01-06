@@ -1,14 +1,4 @@
-.nav {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    background-color: white;
-    font-family: 'Avenir Next Demi Bold';
-    z-index: 100;
-    color: var(--main-blue);
-    margin: 0;
-    font-size: 18px;
-}
+
 
 
 .left, .middle, .right {
@@ -32,9 +22,10 @@
 }
 
 .item {
-    font-size: 14px;
-    padding: 16px;
-    display: inline-block;
+    margin-right: 10px;
+    /* font-size: 14px;
+    padding: 14px;
+    display: inline-block; */
 }
 
 a { 
@@ -44,4 +35,48 @@ a {
 
 a:visited {
     color: var(--main-blue)
+}
+
+.nav {
+    display: flex;
+    height: 80px;
+    background-color: white;
+    font-family: 'Avenir Next Demi Bold';
+    z-index: 100;
+    color: var(--main-blue);
+    margin: 0;
+    font-size: 14px;
+}
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: start;
+    font-size: 18px;
+}
+
+.second {
+    grid-column-start: 5;
+    grid-column-end: 9;
+
+}
+
+.third {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    justify-self: end;
+    /* align-self: end; */
 }
