@@ -1,9 +1,4 @@
 @media only screen and (max-width: 1000px) {
-
-    body {
-        background-color: blue;
-    }
-    
    .width-set {
         width: 78%
     }
@@ -17,13 +12,13 @@
 
     .first {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 5;
         justify-self: start;
     }
 
     .second {
         grid-column-start: 5;
-        grid-column-end: 13;
+        grid-column-end: 14;
 
     }
 
@@ -32,9 +27,8 @@
     }
 
     .main-content {
-        padding: 2%;
+        padding: 10% 5% 0% 5%;
         text-align: center;
-        margin-top: 15%;
     }
 
     .width-set {
@@ -68,17 +62,33 @@
     }
 
     .first {
-       display: none;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        justify-self: center;
     }
 
+   
     .second {
-        grid-column-start: 1;
+        grid-column-start: 2;
         grid-column-end: 13;
+        display: none;
+        width: unset;
+        align-self: center;
+        justify-self: center;
+        /* visibility: hidden; */
 
     }
 
     .third {
         display: none;
+    }
+
+    .address-input {
+        width: 175px;
+    }
+
+    #submit {
+        padding: 5px 1px;
     }
 
     .maxim-container {

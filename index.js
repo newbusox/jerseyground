@@ -57,23 +57,27 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
     // functions
     function addNavForm() {
-        TweenMax.fromTo(".middle", 1, { opacity: 0 }, { opacity: 1 })
-        if ( window.innerWidth < 650 ) {
-            TweenMax.fromTo(".logo", 0, { opacity: 1 }, { opacity: 0 })
-            TweenMax.fromTo(".left", 0, { display: "block" }, { display: "none" })
-            TweenMax.fromTo(".right", 0, { display: "block" }, { display: "none" })
+        if ( window.innerWidth < 416 ) {
+            TweenMax.fromTo(".first", 0, { display: "block" }, { display: "none" })
+            TweenMax.fromTo(".second", 0, { opacity: 0 }, { opacity: 1})
+            TweenMax.fromTo(".second", 0, { display: "none" }, { display: "block" })
+            // TweenMax.fromTo(".third", 0, { display: "block" }, { display: "none" })
 
-        } 
+        } else {
+            TweenMax.fromTo(".second", 1, { opacity: 0 }, { opacity: 1 })
+        }
     }
 
     function removeNavForm() {
-        TweenMax.fromTo(".middle", 1, { opacity: 1 }, { opacity: 0 })
-        if (window.innerWidth < 650) {
-            TweenMax.fromTo(".logo", 0, { opacity: 0 }, { opacity: 1})
-            TweenMax.fromTo(".left", 0, { display: "none" }, { display: "block" })
-            TweenMax.fromTo(".right", 0, { display: "none" }, { display: "block" })
+        if (window.innerWidth < 416) {
+            TweenMax.fromTo(".first", 0, { opacity: 0 }, { opacity: 1})
+            TweenMax.fromTo(".first", 0, { display: "none" }, { display: "block" })
+            TweenMax.fromTo(".second", 0, { display: "block" }, { display: "none" })
+            TweenMax.fromTo(".second", 0, { opacity: 1 }, { opacity: 0 })
 
-        } 
+        } else {
+            TweenMax.fromTo(".second", 1, { opacity: 1 }, { opacity: 0 })
+        }
     }
 
     function enterMaxims() {
@@ -95,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
     function enterAbout() {
         if (window.innerWidth < 400) {
-            TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 4.5 })
+            TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 3.5 })
         } else {
             TweenMax.fromTo(".about", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
         }
