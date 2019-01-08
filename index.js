@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(e) {
+ document.addEventListener('DOMContentLoaded', function(e) {
 
     // init enterController
     var enterController = new ScrollMagic.Controller({
@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     }
 
     document.addEventListener('click', function (e) {
-        e.preventDefault()
         if (event.target.id === "submit") {
             let text = event.target.parentElement.children[0]
             writeUserData(text.value)

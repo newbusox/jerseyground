@@ -28,15 +28,14 @@
 
 .maxim-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .maxim-section {
-    width: 25%;
+    width: 30%;
     padding: 10% 0%;
 }
-
 
 #three {
     background-image: url('../assets/images/section-three-background.jpg');
@@ -45,10 +44,63 @@
 }
 
 .movie-background {
-    width: 80%; 
-    height: 80%;
+    width: 100%; 
+    height: 100%;
     /* opacity: 0; */
 }
+
+.works-grid-container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-template-areas: 
+        ". . . . . . . . . . . . . ."
+        ". first first first first second second second second third third third third ."
+        ". first first first first second second second second third third third third ."
+        ". first first first first second second second second third third third third ."
+        ". . . . . . . . . . . . . ."
+        ;
+    width: 100%;
+    height: 100%;
+}
+
+.index-card {
+    /* width: 50px; */
+    /* height: 60px; */
+    background-color: white;
+    box-shadow: 1px 5px 5px var(--grey);
+    border: 1px solid var(--grey);
+    overflow: scroll;
+
+}
+
+.first-card {
+    grid-area: first;
+}
+
+.second-card {
+    grid-area: second;
+}
+
+.third-card {
+    grid-area: third;
+}
+
+.second-head {
+    background-color: rgba(45, 94, 141, 0.75);
+    position: relative;
+    height: 15%;
+    width: 100%;
+}
+
+.head {
+    background-color: rgba(45, 94, 141, 0.5);
+    position: relative;
+    height: 15%;
+    width: 100%;
+}
+
 
 .process {
     padding: 5% 0%;
