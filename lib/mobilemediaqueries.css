@@ -49,6 +49,10 @@
 }
 
 @media only screen and (max-width: 415px) {
+    .body-light {
+        font-family: 'Avenir Next Medium';
+    }
+
     .form {
         width: 90%;
     }
@@ -63,8 +67,7 @@
 
     .first {
         grid-column-start: 1;
-        grid-column-end: 6;
-        justify-self: center;
+        align-self: center;
     }
 
    
@@ -75,8 +78,6 @@
         width: unset;
         align-self: center;
         justify-self: center;
-        /* visibility: hidden; */
-
     }
 
     .third {
@@ -103,49 +104,3 @@
     }
 
 }
-
-/* @media only screen and (max-width: 650px) and (min-width: 401px) {
-
-    .main-content {
-        padding: 15% 2%;
-        text-align: center;
-    }
-
-    .maxim-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .maxim-section {
-        width: unset;
-    }
-
-    .process-inner {
-        margin: 0px !important;
-        font-size: 18px !important;
-    }
-
-
-}
-
-@media only screen and (max-width: 400px) {
-
-    .width-set {
-        width: 100%;
-        text-align: center;
-    }
-
-    .main-content { 
-        margin: 0px !important;
-        padding: 60px 10px 0px 10px !important;
-    }
-
-
-    .number {
-        border: unset;
-        margin: unset;
-    }
-
-} */
