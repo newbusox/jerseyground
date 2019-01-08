@@ -29,53 +29,39 @@
             };
             firebase.initializeApp(config);
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(event.target.name).offset().top
+                        }, 800, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+        </script>
         
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- navigation bar -->
-        <!-- <ul class="nav fixed top-0 left-0 right-0 flex justify-between items-center list-reset">
-            <li class="pl3 p2">
-                <img src="assets/images/JeryseGroundLogo.png" alt="logo" height="50"/>
-                <object data="./assets/images/svgs/jerseylogo.svg" type="image/svg+xml" width="160"></object>
-                <p>JerseyGround</p>
-                
-            </li>
-            <div class="nav-form flex items-center justify-between" id="form">
-                <input class="address-input grey" type="" name="" placeholder="Enter your home address">
-                <a class="button send white">Get Your Free Offer</a>
-            </div>
-            <ul class="flex list-reset pr3">
-                <li class="p2">Sell</li>
-                <li class="p2">How It Works</li>
-                <li class="p2">About Us</li>
-            </ul>
-            
-        </ul> -->
-
-        <!-- <div class="top-0 left-0 right-0 fixed nav mx4">
-            <div class="left">
-                <object data="./assets/images/svgs/jerseylogo.svg" type="image/svg+xml" height="60"></object>
-                <p class="logo ml2">JerseyGround</p>
-            </div>
-            <div class="middle">
-                <div class="nav-form flex items-center">
-                    <input class="address-input grey" type="" name="" placeholder="Enter your home address">
-                    <a class="button send white text-decoration-none" id="submit" target="_blank" href="https://benjaminshelley.typeform.com/to/AmrxvK">Get Your Free Offer</a>
-                </div>
-            </div>
-            <div class="right">
-                <a class="item text-decoration-none" href="#two">How It Works</a>
-                <a class="item text-decoration-none" href="#four">Our Process</a>
-                <a class="item text-decoration-none mr2" href="#five">About Us</a>
-            </div>
-        </div> -->
 
         <div class="top-0 left-0 right-0 fixed nav mx4 grid-container">
-            <div class="grid-item first"><img src="assets/images/jglogo.png" alt="logo" height="48"/></div>
+            <div class="grid-item first"><a href="#one"><img name="#one" src="assets/images/jglogo.png" alt="logo" height="48"/></a></div>
             <div class="grid-item second">
                 <div class="nav-form flex items-center">
                     <input class="address-input grey" type="" name="" placeholder="Enter your home address">
@@ -84,9 +70,9 @@
                 </div>
             </div>
             <div class="grid-item third">
-                <a class="item text-decoration-none" href="#two">How It Works</a>
-                <a class="item text-decoration-none" href="#four">Our Process</a>
-                <a class="item text-decoration-none" href="#five">About Us</a>
+                <a class="item text-decoration-none" name="#two" href="#two">How It Works</a>
+                <a class="item text-decoration-none" name="#four" href="#four">Our Process</a>
+                <a class="item text-decoration-none" name="#five" href="#five">About Us</a>
             </div>
         </div>
 
@@ -196,7 +182,7 @@
         
         
        
-        
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>

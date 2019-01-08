@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
         });
     }
 
-
     document.addEventListener('click', function (e) {
         e.preventDefault()
         if (event.target.id === "submit") {
