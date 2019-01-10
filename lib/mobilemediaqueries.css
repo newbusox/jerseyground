@@ -45,6 +45,29 @@
         margin: 0px;
     }
 
+    .works-grid-container {
+       display: flex;
+       flex-direction: column;
+       padding: 10%;
+    }
+
+    .first-card {
+        margin: 20px 0px;
+    }
+
+    .second-card {
+        margin-bottom: 20px;
+
+    }
+
+    .third-card {
+        margin-bottom: 20px;
+    }
+
+    .head {
+        padding: 10px 10px;
+    }
+
 
 }
 
