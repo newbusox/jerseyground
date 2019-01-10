@@ -87,7 +87,10 @@
     }
 
     function enterPlayer() {
-        TweenMax.fromTo(".movie-background", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+        // TweenMax.fromTo(".movie-background", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+        TweenMax.fromTo(".first-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 0.5 })
+        TweenMax.fromTo(".second-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+        TweenMax.fromTo(".third-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1.5 })
     }
 
     function enterProcess() {
