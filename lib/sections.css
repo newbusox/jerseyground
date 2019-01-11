@@ -26,15 +26,58 @@
     background-color: white;
 }
 
-.maxim-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.maxim-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    grid-column-gap: 20px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img1 img2 img3"
+        "max1 max2 max3"
+        "desc1 desc2 desc3"
 }
 
-.maxim-section {
-    width: 30%;
-    padding: 10% 0%;
+#img1 {
+    grid-area: img1;
+    align-self: center;
+    justify-self: center;
+}
+
+#img2 {
+    grid-area: img2;
+    align-self: center;
+    justify-self: center;
+}
+
+#img3 {
+    grid-area: img3;
+    align-self: center;
+    justify-self: center;
+}
+
+#max1 {
+    grid-area: max1;
+}
+
+#max2 {
+    grid-area: max2;
+}
+
+#max3 {
+    grid-area: max3;
+}
+
+#desc1 {
+    grid-area: desc1;
+}
+
+#desc2 {
+    grid-area: desc2;
+}
+
+#desc3 {
+    grid-area: desc3;
 }
 
 #three {

@@ -64,6 +64,21 @@
         padding: 10px 0px;
     }
 
+    .maxim-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #img1, #img2, #img3 {
+        margin-bottom: 0px;
+    }
+
+    #desc1, #desc2, #desc3 {
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -111,15 +126,5 @@
         padding: 5px 1px;
     }
 
-    .maxim-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .maxim-section {
-        width: unset;
-    }
 
 }

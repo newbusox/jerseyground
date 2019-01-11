@@ -36,11 +36,11 @@
     sceneTwo.addTo(enterController)
 
 
-    var sceneThree = new ScrollMagic.Scene({
-        triggerElement: '#three',
-    })
-    sceneThree.on("progress", () => enterPlayer())
-    sceneThree.addTo(enterController)
+    // var sceneThree = new ScrollMagic.Scene({
+    //     triggerElement: '#three',
+    // })
+    // sceneThree.on("progress", () => enterPlayer())
+    // sceneThree.addTo(enterController)
 
     var sceneFour = new ScrollMagic.Scene({
         triggerElement: '#four',
@@ -86,12 +86,12 @@
         TweenMax.fromTo("#cal", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y:0, delay: 1.5})
     }
 
-    function enterPlayer() {
-        // TweenMax.fromTo(".movie-background", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
-        TweenMax.fromTo(".first-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 0.5 })
-        TweenMax.fromTo(".second-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
-        TweenMax.fromTo(".third-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1.5 })
-    }
+    // function enterPlayer() {
+    //     // TweenMax.fromTo(".movie-background", 1, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+    //     TweenMax.fromTo(".first-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 0.5 })
+    //     TweenMax.fromTo(".second-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
+    //     TweenMax.fromTo(".third-card", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1.5 })
+    // }
 
     function enterProcess() {
         TweenMax.fromTo("#head-text", 0.5, { opacity: 0, y: 25 }, { opacity: 1, y: 0, delay: 1 })
