@@ -43,7 +43,7 @@
     // sceneThree.addTo(enterController)
 
     var sceneFour = new ScrollMagic.Scene({
-        triggerElement: '#four',
+        triggerElement: '#three',
     })
     sceneFour.on("enter", () => enterProcess())
     sceneFour.addTo(enterController)

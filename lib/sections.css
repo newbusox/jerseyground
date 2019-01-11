@@ -94,15 +94,16 @@
 }
 
 .index-card {
-    background-color: white;
+    background-color: rgba(235, 235, 235, 0.5);
     width: 30%;
     box-shadow: 1px 5px 5px var(--grey);
     border: 1px solid var(--grey);
+    /* margin: 40px 40px; */
 
 }
 
 .head {
-    background-color: rgba(45, 94, 141, 0.75);   
+    background-color: var(--main-blue);   
     position: relative;
     height: 15%;
     width: 100%;
@@ -123,7 +124,7 @@
 }
 
 .number {
-    border: 1px solid var(--grey);
+    border: 1px solid var(--white);
     border-radius: 200px;
     padding: 4px 12px;
     font-size: 22px;

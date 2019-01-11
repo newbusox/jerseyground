@@ -71,6 +71,11 @@
         justify-content: center;
     }
 
+    .index-card {
+        margin: unset;
+        margin-bottom: 40px;
+    }
+
 
     #img1, #img2, #img3 {
         margin-bottom: 0px;
