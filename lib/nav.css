@@ -13,13 +13,13 @@ a:visited {
 
 .nav {
     display: flex;
-    height: 60px;
+    height: 100px;
     background-color: white;
     font-family: 'Avenir Next Demi Bold';
     z-index: 100;
     color: var(--main-blue);
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 1 rem;
 }
 
 .grid-container { 
